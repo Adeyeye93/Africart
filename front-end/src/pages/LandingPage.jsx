@@ -60,7 +60,7 @@ const LandingPage = () => {
                 Sign in
               </Link>
               <Link
-                to=""
+                to="/sign-up"
                 className="bg-primaryColor px-[10px] py-[5px] border rounded text-white hover:bg-white hover:border hover:text-primaryColor"
               >
                 Sign up
@@ -203,9 +203,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primaryColor">
-
-        </div>
+        <div className="bg-primaryColor"></div>
       </main>
     </div>
   );
