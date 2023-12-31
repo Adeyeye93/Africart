@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function SignUpPage() {
   return (
     <>
@@ -22,7 +23,16 @@ function SignUpPage() {
           />
           <form className="mx-auto w-7/12 h-4/6 border-2 border-gray-950">
             <h2 className="text-primaryColor text-xl font-bold">Sign-Up</h2>
-            <button type="submit">Sign up with Google</button>
+            <FontAwesomeIcon
+              className="font-bold text-xl text-white  border-green-700"
+              icon="fa-brands fa-google"
+            />
+            <button
+              className="W-1/2 text-white font-bold border border-green-700"
+              type="submit"
+            >
+              Sign up with Google
+            </button>
           </form>
         </main>
       </div>
