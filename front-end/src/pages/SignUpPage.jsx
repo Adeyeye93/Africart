@@ -1,6 +1,10 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import Button from "../components/serviceCard";
+import Btn from "../components/btn";
+import { text } from "@fortawesome/fontawesome-svg-core";
+
 function SignUpPage() {
   return (
     <>
@@ -31,7 +35,7 @@ function SignUpPage() {
             <h2 className="m-2 text-primaryColor text-xl font-bold">Sign-Up</h2>
 
             <button
-              className="dborder-none w-full  p-3 rounded-lg text-white font-bold border bg-primaryColor"
+              className="border-none w-full  p-3 rounded-lg text-white font-bold border bg-primaryColor"
               type="submit"
             >
               <FontAwesomeIcon
@@ -41,13 +45,33 @@ function SignUpPage() {
               <span>&nbsp; &nbsp;</span>
               Sign up with Google
             </button>
+            {/* <Btn className=" text-white font-bold" /> */}
             <h5 className="text-center">or</h5>
             <h3>Full Name</h3>
-            <input type="text" placeholder="John Doe" required />
+            <Btn
+              type={text}
+              placeholder={"John Doe"}
+              title={"something here"}
+            />
+
             <h3>Email</h3>
-            <input type="email" placeholder="example@gmail.com" />
+            <Btn
+              type={"email"}
+              placeholder={"example@example.com"}
+              title={"something here"}
+            />
             <h3>Password</h3>
-            <input type="password" placeholder="**********" required />
+            <Btn
+              type={"password"}
+              placeholder={"Password"}
+              title={"something here"}
+            />
+            {/* TODO: CHECKBOX HERE */}
+            <Btn
+              type={"submit"}
+              placeholder={"**********"}
+              title={"something here"}
+            />
           </form>
         </main>
       </div>
