@@ -1,4 +1,6 @@
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 function SignUpPage() {
   return (
     <>
@@ -21,18 +23,31 @@ function SignUpPage() {
             src="assets/images/logo.png"
             alt="afrikart-logo"
           />
-          <form className="mx-auto w-7/12 h-4/6 border-2 border-gray-950">
-            <h2 className="text-primaryColor text-xl font-bold">Sign-Up</h2>
-            <FontAwesomeIcon
-              className="font-bold text-xl text-white  border-green-700"
-              icon="fa-brands fa-google"
-            />
+          <i class="fa-brands fa-google"></i>
+          <form
+            className="mx-auto w-7/12 h-4/6 border-2 border-gray-950"
+            action=""
+          >
+            <h2 className="m-2 text-primaryColor text-xl font-bold">Sign-Up</h2>
+
             <button
-              className="W-1/2 text-white font-bold border border-green-700"
+              className="dborder-none w-full  p-3 rounded-lg text-white font-bold border bg-primaryColor"
               type="submit"
             >
+              <FontAwesomeIcon
+                className="font-bold text-xl text-white border-green-700"
+                icon={faGoogle}
+              />
+              <span>&nbsp; &nbsp;</span>
               Sign up with Google
             </button>
+            <h5 className="text-center">or</h5>
+            <h3>Full Name</h3>
+            <input type="text" placeholder="John Doe" required />
+            <h3>Email</h3>
+            <input type="email" placeholder="example@gmail.com" />
+            <h3>Password</h3>
+            <input type="password" placeholder="**********" required />
           </form>
         </main>
       </div>
