@@ -1,15 +1,14 @@
 import React from "react";
 
-export const Btn = ({ type, placeholder, title }) => {
+export const Btn = ({ bgColor, type, title }) => {
   return (
-    <>
-      <input
-        className=" p-3 rounded-lg w-full"
-        type={type}
-        placeholder={placeholder}
-        required
-      />
-    </>
+    <button
+      style={{ backgroundColor: bgColor }}
+      className="my-2 p-3 rounded-lg w-full bg-primaryColor text-white font-bold"
+      type={type}
+    >
+      <h2>{title}</h2>
+    </button>
   );
 };
 export default Btn;

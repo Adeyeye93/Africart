@@ -1,17 +1,17 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import Button from "../components/serviceCard";
-import Btn from "../components/btn";
 import { text } from "@fortawesome/fontawesome-svg-core";
+import InputField from "../components/inputField";
+import Btn from "../components/btn";
 
 function SignUpPage() {
   return (
     <>
-      <div className="flex justify-between bg-secondaryColor w-full h-lvh">
-        <aside className="w-8/12 relative ">
+      <div className="flex justify-between bg-secondaryColor w-full h-lvh ">
+        <aside className="w-9/12 relative ">
           <img
-            className="absolute w-1/2 top-72 left-10"
+            className="absolute w-1/2 top-80 left-10"
             src="assets/images/signup-girl.png"
             alt="signup-img"
           />
@@ -21,21 +21,17 @@ function SignUpPage() {
             alt="rectangle"
           />
         </aside>
-        <main className="flex flex-col justify-center align-middle w-full mr-14">
+        <main className="flex flex-col justify-center align-middle w-full mr-14 ">
           <img
             className="w-[358px] mx-auto "
             src="assets/images/logo.png"
             alt="afrikart-logo"
           />
-          <i class="fa-brands fa-google"></i>
-          <form
-            className="mx-auto w-7/12 h-4/6 border-2 border-gray-950"
-            action=""
-          >
-            <h2 className="m-2 text-primaryColor text-xl font-bold">Sign-Up</h2>
 
+          <form className="mx-auto w-7/12 " action="">
+            <h2 className="m-2 text-primaryColor text-xl font-bold">Sign-Up</h2>
             <button
-              className="border-none w-full  p-3 rounded-lg text-white font-bold border bg-primaryColor"
+              className="border-none w-full p-3 rounded-lg text-white font-bold border bg-primaryColor"
               type="submit"
             >
               <FontAwesomeIcon
@@ -45,33 +41,31 @@ function SignUpPage() {
               <span>&nbsp; &nbsp;</span>
               Sign up with Google
             </button>
-            {/* <Btn className=" text-white font-bold" /> */}
-            <h5 className="text-center">or</h5>
-            <h3>Full Name</h3>
-            <Btn
-              type={text}
-              placeholder={"John Doe"}
-              title={"something here"}
-            />
 
-            <h3>Email</h3>
-            <Btn
-              type={"email"}
-              placeholder={"example@example.com"}
-              title={"something here"}
-            />
-            <h3>Password</h3>
-            <Btn
-              type={"password"}
-              placeholder={"Password"}
-              title={"something here"}
-            />
-            {/* TODO: CHECKBOX HERE */}
-            <Btn
-              type={"submit"}
-              placeholder={"**********"}
-              title={"something here"}
-            />
+            <div className="mt-5 flex items-center justify-center">
+              <div className=" w-[240px] h-px mx-4 bg-primaryColor"></div>
+              <span className="text-primaryColor or-text">or</span>
+              <div className=" w-[240px] h-px mx-4 bg-primaryColor"></div>
+            </div>
+
+            <h2 className="text-lg">Full Name</h2>
+            <InputField type={text} placeholder={"John Doe"} />
+
+            <h2 className="text-lg">Email</h2>
+            <InputField type={"email"} placeholder={"example@example.com"} />
+
+            <h2 className="text-lg">Password</h2>
+            <InputField type={"password"} placeholder={"Password"} />
+
+            <div className="mt-4 text-primaryColor">
+              <input className="cursor-pointer" type="checkbox" name="" id="" />
+              <p className="mx-1 inline text-sm">
+                Creating an account means you’re okay with our{" "}
+                <span>Terms of Service</span>, <span>Privacy Policy</span>, and
+                our default <span>Notification Settings</span>.
+              </p>
+            </div>
+            <Btn title="Create Account" />
           </form>
         </main>
       </div>
@@ -82,7 +76,8 @@ function SignUpPage() {
 // 1. SEMATICS
 // 2. Responsiveness
 // 3. Fill up the alt images
-// 4. Work on the button component
+// 4. Work on the button component - done
 // 5. Work on the form
-// 6. Get icons
+// 6. Get icons - done
+// 7. Links
 export default SignUpPage;
