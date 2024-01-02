@@ -7,9 +7,9 @@ import Btn from "../components/btn";
 
 function SignUpPage() {
   return (
-    <>
-      <div className="flex justify-between bg-secondaryColor w-full h-lvh ">
-        <aside className="w-9/12 relative ">
+    <div className="max-w-[1440px] mx-auto">
+      <div className="flex justify-center bg-secondaryColor w-full h-lvh">
+        <aside className="w-9/12 hidden lg:block relative ">
           <img
             className="absolute w-1/2 top-80 left-10"
             src="assets/images/signup-girl.png"
@@ -21,14 +21,14 @@ function SignUpPage() {
             alt="rectangle"
           />
         </aside>
-        <main className="flex flex-col justify-center align-middle w-full mr-14 ">
+        <main className="flex flex-col justify-center align-middle w-full lg:mr-12">
           <img
-            className="w-[358px] mx-auto "
+            className="mt-6 lg:mt-0 w-[358px] mx-auto"
             src="assets/images/logo.png"
             alt="afrikart-logo"
           />
 
-          <form className="mx-auto w-7/12 " action="">
+          <form className=" mx-auto w-11/12 sm:w-7/12" action="">
             <h2 className="m-2 text-primaryColor text-xl font-bold">Sign-Up</h2>
             <button
               className="border-none w-full p-3 rounded-lg text-white font-bold border bg-primaryColor"
@@ -69,7 +69,7 @@ function SignUpPage() {
           </form>
         </main>
       </div>
-    </>
+    </div>
   );
 }
 // TODO:
