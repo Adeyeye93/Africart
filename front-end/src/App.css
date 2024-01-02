@@ -91,3 +91,13 @@
     width: auto\9; /* ie8 */
   }
 }
+
+/* Sign up page */
+@media screen and (max-width: 1024px) {
+  .sign-up-form {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* border: 1px solid orange; */
+    /* display: none; */
+  }
+}
