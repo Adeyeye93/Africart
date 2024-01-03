@@ -37,7 +37,7 @@ function SignUpPage() {
             <h2 className="m-2 text-primaryColor text-xl font-bold">Sign-Up</h2>
             <button
               className="border-none w-full p-3 rounded-lg text-white font-bold border bg-primaryColor"
-              type="submit"
+              type=""
             >
               <FontAwesomeIcon
                 className="font-bold text-xl text-white border-green-700"
@@ -63,7 +63,13 @@ function SignUpPage() {
             <InputField type={"password"} placeholder={"Password"} />
 
             <div className="mt-4 text-primaryColor">
-              <input className="cursor-pointer" type="checkbox" name="" id="" />
+              <input
+                className="cursor-pointer"
+                type="checkbox"
+                name=""
+                id=""
+                required
+              />
               <p className="mx-1 inline text-sm">
                 Creating an account means you’re okay with our
                 <Link className="font-bold" to="">
