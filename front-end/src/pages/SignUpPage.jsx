@@ -81,7 +81,7 @@ function SignUpPage() {
                 .
               </p>
             </div>
-            <Btn title="Create Account" />
+            <Btn title="Create Account" width="w-full" />
           </form>
         </main>
       </div>
