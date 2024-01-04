@@ -91,3 +91,21 @@
     width: auto\9; /* ie8 */
   }
 }
+
+.hero-section {
+  /* background-color: #E3C495; */
+  background-color: #006150;
+  background-image: url("../public/assets/images/hero.png");
+  /* background-blend-mode:multiply; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+}
+
+.hero-text {
+  text-shadow: 0px 0px 1px black;
+}
+
+.service-card {
+  box-shadow: 0px 0px 35px -15px rgba(0, 0, 0, 0.5);
+}
