@@ -91,7 +91,7 @@ const LandingPage = () => {
                 Sign in
               </Link>
               <Link
-                to=""
+                to="/sign-up"
                 className="bg-primaryColor px-[10px] py-[5px] border rounded text-white hover:bg-white hover:border hover:text-primaryColor"
               >
                 Sign up
@@ -274,7 +274,10 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 px-[26px] py-[35px] sm:h-[350px] text-primaryColor text-center sm:text-left sm:flex justify-center items-center sm:gap-x-[5rem] leading-6">
+ feature/verification-page
+        <div className="bg-primaryColor"></div>
+
+        <div className="bg-primaryColor"></div>
           <div className="mb-[1rem]">
             <h3 className="text-[20px] sm:text-[25px] font-[600] mb-[.75rem]">
               Contact Us From Here
@@ -341,6 +344,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+ main
       </main>
     </div>
   );
