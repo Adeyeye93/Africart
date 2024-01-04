@@ -274,9 +274,77 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primaryColor">
+ feature/verification-page
+        <div className="bg-primaryColor"></div>
 
+        <div className="bg-primaryColor"></div>
+          <div className="mb-[1rem]">
+            <h3 className="text-[20px] sm:text-[25px] font-[600] mb-[.75rem]">
+              Contact Us From Here
+            </h3>
+            <p className="text-[14px] w-[230px] mx-auto sm:mx-0">
+              You can contact us from here, you can write to us, call us or
+              visit our service center, we will gladly assit you.
+            </p>
+          </div>
+          <div className="sm:flex sm:flex-col lg:flex-row lg:gap-x-[5rem] justify-between items-center text-[14px]">
+            <p>
+              <p>Telephone: 09031378112</p>
+              <p>Email: afrikart@gmail.com</p>
+              <p>Location: Africa-Nigeria</p>
+            </p>
+            <div className="sm:mt-[1rem] sm:self-start bg-primaryColor text-white w-max mx-auto sm:mx-0 mt-[1rem] py-[5px] rounded-[10px]">
+              <button className="px-[1rem]">Contact Us</button>
+            </div>
+          </div>
         </div>
+
+        <div className="bg-primaryColor text-white p-[40px] sm:h-[400px]">
+          <div className="flex flex-wrap sm:justify-around sm:flex-row gap-y-[1rem] gap-x-[3rem]">
+            <div>
+              <h3 className="text-[20px] font-[600] mb-[.75rem]">
+                Our Services
+              </h3>
+              <ul className="text-[14px] flex flex-col gap-y-[10px]">
+                <li>Pricing</li>
+                <li>Discounts</li>
+                <li>Report a bug</li>
+                <li>Terms of Service</li>
+                <li>Buy on Afrikat</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-[20px] font-[600] mb-[.75rem]">Community</h3>
+              <ul className="text-[14px] flex flex-col gap-y-[10px]">
+                <li>Support</li>
+                <li>F&A</li>
+                <li>Customer Help</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-[20px] font-[600] mb-[.75rem]">
+                Our Company
+              </h3>
+              <ul className="text-[14px] flex flex-col gap-y-[10px]">
+                <li>Blog</li>
+                <li>Our Mission</li>
+                <li>Get in Touch</li>
+              </ul>
+            </div>
+            <div className="flex gap-x-[1.5rem]">
+              <Link>
+                <FaFacebookF className="size-[20px]" />
+              </Link>
+              <Link>
+                <FaTwitter className="size-[20px]" />
+              </Link>
+              <Link>
+                <RiInstagramFill className="size-[20px]" />
+              </Link>
+            </div>
+          </div>
+        </div>
+ main
       </main>
     </div>
   );
