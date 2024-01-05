@@ -295,7 +295,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-
+      </main>
+      <footer>
         <div className="bg-primaryColor text-white p-[40px] sm:h-[400px]">
           <div className="flex flex-wrap sm:justify-around sm:flex-row gap-y-[1rem] gap-x-[3rem]">
             <div>
@@ -341,7 +342,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </main>
+      </footer>
     </div>
   );
 };
