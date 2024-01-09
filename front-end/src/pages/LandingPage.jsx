@@ -62,24 +62,24 @@ const LandingPage = () => {
           </div>
           {/* <nav className="hidden sm:hidden lg:flex">
             <ul className="flex gap-x-[17px] font-[400]">
-              <li>
+              <li><Link to=''>
                 <Link to="">Home</Link>
-              </li>
-              <li>
+              </Link></li>
+              <li><Link to=''>
                 <Link to="">Products</Link>
-              </li>
-              <li>
+              </Link></li>
+              <li><Link to=''>
                 <Link to="">Services</Link>
-              </li>
-              <li>
+              </Link></li>
+              <li><Link to=''>
                 <Link to="">About us</Link>
-              </li>
-              <li>
+              </Link></li>
+              <li><Link to=''>
                 <Link to="">Blog</Link>
-              </li>
-              <li>
+              </Link></li>
+              <li><Link to=''>
                 <Link to="">Contact</Link>
-              </li>
+              </Link></li>
             </ul>
           </nav> */}
           <div className="flex items-center">
@@ -285,11 +285,11 @@ const LandingPage = () => {
             </p>
           </div>
           <div className="sm:flex sm:flex-col lg:flex-row lg:gap-x-[5rem] justify-between items-center text-[14px]">
-            <p>
+            <div>
               <p>Telephone: 09031378112</p>
               <p>Email: afrikart@gmail.com</p>
               <p>Location: Africa-Nigeria</p>
-            </p>
+            </div>
             <div className="sm:mt-[1rem] sm:self-start bg-primaryColor text-white w-max mx-auto sm:mx-0 mt-[1rem] py-[5px] rounded-[10px]">
               <button className="px-[1rem]">Contact Us</button>
             </div>
@@ -304,19 +304,35 @@ const LandingPage = () => {
                 Our Services
               </h3>
               <ul className="text-[14px] flex flex-col gap-y-[10px]">
-                <li>Pricing</li>
-                <li>Discounts</li>
-                <li>Report a bug</li>
-                <li>Terms of Service</li>
-                <li>Buy on Afrikat</li>
+                <li>
+                  <Link to="">Pricing</Link>
+                </li>
+                <li>
+                  <Link to="">Discounts</Link>
+                </li>
+                <li>
+                  <Link to="">Report a bug</Link>
+                </li>
+                <li>
+                  <Link to="">Terms of Service</Link>
+                </li>
+                <li>
+                  <Link to="">Buy on Afrikat</Link>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="text-[20px] font-[600] mb-[.75rem]">Community</h3>
               <ul className="text-[14px] flex flex-col gap-y-[10px]">
-                <li>Support</li>
-                <li>F&A</li>
-                <li>Customer Help</li>
+                <li>
+                  <Link to="">Support</Link>
+                </li>
+                <li>
+                  <Link to="">F&A</Link>
+                </li>
+                <li>
+                  <Link to="">Customer Help</Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -324,9 +340,15 @@ const LandingPage = () => {
                 Our Company
               </h3>
               <ul className="text-[14px] flex flex-col gap-y-[10px]">
-                <li>Blog</li>
-                <li>Our Mission</li>
-                <li>Get in Touch</li>
+                <li>
+                  <Link to="">Blog</Link>
+                </li>
+                <li>
+                  <Link to="">Our Mission</Link>
+                </li>
+                <li>
+                  <Link to="">Get in Touch</Link>
+                </li>
               </ul>
             </div>
             <div className="flex gap-x-[1.5rem]">

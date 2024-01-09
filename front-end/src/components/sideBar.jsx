@@ -24,7 +24,7 @@ const SideBar = forwardRef(function MyInput(props, ref) {
       <div className="flex flex-col">
         <Link
           to=""
-          className="px-[10px] py-[5px] border-b-[1px] my-[1rem]  hover:bg-primaryColor hover:text-white"
+          className="px-[10px] py-[5px] border-b-[1px] mt-[1rem]  hover:bg-primaryColor hover:text-white"
         >
           Sign in
         </Link>
